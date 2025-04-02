@@ -28,5 +28,10 @@ class home : AppCompatActivity() {
             val intentHome = Intent(this, MainActivity::class.java)
             startActivity(intentHome)
         }
+
+        binding.buttonRV.setOnClickListener {
+            val intentHome = Intent(this, Recycler::class.java)
+            startActivity(intentHome)
+        }
     }
 }
